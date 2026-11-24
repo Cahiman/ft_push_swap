@@ -1,0 +1,4 @@
+objs/
+push_swap
+*.o
+*.a
