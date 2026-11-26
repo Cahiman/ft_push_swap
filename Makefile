@@ -16,7 +16,7 @@ PRINTF = $(PRINTF_DIR)/libftprintf.a
 
 INCLUDES = -I $(INCS_DIR) -I $(LIBFT_DIR) -I $(PRINTF_DIR)
 
-SRCS = main.c raw_moves.c push.c reverse.c rotate.c swap.c					debug.c
+SRCS = main.c raw_moves.c push.c reverse.c rotate.c swap.c error.c parse_flag.c parse_numbers.c check.c				debug.c
 
 OBJS = $(addprefix $(OBJS_DIR)/, $(SRCS:.c=.o))
 

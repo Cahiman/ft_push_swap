@@ -6,7 +6,7 @@
 /*   By: basianno <basianno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/24 08:50:52 by basianno          #+#    #+#             */
-/*   Updated: 2026/11/26 10:10:21 by basianno         ###   ########.fr       */
+/*   Updated: 2026/11/26 11:33:05 by basianno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,14 @@ typedef enum e_op
 	RRR,
 	OP_COUNT
 }	t_op;
+
+typedef enum e_strategy
+{
+	SIMPLE,
+	MEDIUM,
+	COMPLEX,
+	ADAPTIVE
+}	t_strategy;
 
 typedef struct s_stack
 {
@@ -66,6 +74,10 @@ void	rr(t_data *data);
 void	rra(t_data *data);
 void	rrb(t_data *data);
 void	rrr(t_data *data);
+
+void	free_all(t_data *data);
+void	free_split(char **tab);
+void	error_exit(t_data *data, char **tab);
 
 void	print_stacks(t_data *data); // A ENLEVER PLUS TARD
 

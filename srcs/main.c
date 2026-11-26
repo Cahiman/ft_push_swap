@@ -6,7 +6,7 @@
 /*   By: basianno <basianno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/24 08:51:00 by basianno          #+#    #+#             */
-/*   Updated: 2026/11/26 10:17:47 by basianno         ###   ########.fr       */
+/*   Updated: 2026/11/26 11:49:49 by basianno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,6 @@ int	main()
 		ft_printf("Operations : %d ", data.operation[i]);
 		i++;
 	}
-	free(data.a.data);
-	free(data.b.data);
+	free_all(&data);
 	return (0);
 }
