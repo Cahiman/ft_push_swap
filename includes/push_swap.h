@@ -6,7 +6,7 @@
 /*   By: basianno <basianno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/24 08:50:52 by basianno          #+#    #+#             */
-/*   Updated: 2026/11/27 16:59:39 by basianno         ###   ########.fr       */
+/*   Updated: 2026/11/27 18:35:26 by basianno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ typedef struct s_data
 
 int	check_flag(char *str);
 int	parse_args(int ac, char **av, t_data *data);
+int	is_valid_number(char *str);
 
 void	swap(t_stack *stack);
 void	rotate(t_stack *stack);
