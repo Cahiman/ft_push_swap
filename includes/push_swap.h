@@ -6,7 +6,7 @@
 /*   By: basianno <basianno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/24 08:50:52 by basianno          #+#    #+#             */
-/*   Updated: 2026/11/26 11:33:05 by basianno         ###   ########.fr       */
+/*   Updated: 2026/11/27 16:59:39 by basianno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,12 @@ typedef enum e_op
 
 typedef enum e_strategy
 {
+	ADAPTIVE,
 	SIMPLE,
 	MEDIUM,
 	COMPLEX,
-	ADAPTIVE
+	BENCH,
+	UNKNOWN
 }	t_strategy;
 
 typedef struct s_stack
@@ -54,6 +56,10 @@ typedef struct s_data
 	int		bench;
 	int		strategy;
 }	t_data;
+
+
+int	check_flag(char *str);
+int	parse_args(int ac, char **av, t_data *data);
 
 void	swap(t_stack *stack);
 void	rotate(t_stack *stack);
